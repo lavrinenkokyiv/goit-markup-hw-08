@@ -1,0 +1,44 @@
+.excellence {
+  padding-bottom: 0;
+}
+.excellence__list h2 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.excellence__list p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.7;
+  color: var(--grey-text);
+}
+.excellence__list {
+  display: flex;
+  justify-content: space-between;
+}
+.excellence__item + .excellence__item {
+  margin-left: 30px;
+}
+.excellence__item::before {
+  display: block;
+  margin-bottom: 30px;
+  content: "";
+  height: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.excellence__item-sputnik::before {
+  background-image: url(../images/sputnik.svg);
+}
+.excellence__item-watch::before {
+  background-image: url(../images/watch.svg);
+}
+.excellence__item-laptop::before {
+  background-image: url(../images/laptop.svg);
+}
+.excellence__item-gagarin::before {
+  background-image: url(../images/gagarin.svg);
+}
