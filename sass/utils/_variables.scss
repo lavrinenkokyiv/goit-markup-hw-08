@@ -1,0 +1,20 @@
+:root {
+  --general-text: #212121;
+  --second-text: #ffffff;
+  --blue-text: #2196f3;
+  --grey-text: #757575;
+  --nav-grey-text: rgba(255, 255, 255, 0.6);
+  --background-dark: #2f303a;
+  --background-white: #f5f4fa;
+  --background-button: #188ce8;
+  --background-body: #ffffff;
+  --icon-site-fill: #afb1b8;
+  --icon-background-footer: rgba(255, 255, 255, 0.1);
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--general-text);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--background-body);
+}
