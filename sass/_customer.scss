@@ -1,0 +1,99 @@
+.customer h6 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  color: var(--general-text);
+}
+.customer__item {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer__icon-one {
+  width: 41px;
+  height: 46.7px;
+  fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer__icon-two {
+  width: 40px;
+  height: 52px;
+  fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer__icon-three {
+  width: 43.46px;
+  height: 41.18px;
+  fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer__icon-four {
+  width: 84.44px;
+  height: 40.62px;
+  fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer__icon-five {
+  width: 62.54px;
+  height: 45.43px;
+  fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer__icon-six {
+  width: 93.79px;
+  height: 43.93px;
+  fill: var(--icon-site-fill);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customer__list {
+  display: flex;
+  justify-content: space-between;
+}
+.customer__item + .customer__item {
+  margin-left: 30px;
+}
+.customer__item-groupone:hover,
+.customer__item-groupone:hover .customer__icon-one,
+.customer__item-grouptwo:hover,
+.customer__item-grouptwo:hover .customer__icon-two,
+.customer__item-groupthree:hover,
+.customer__item-groupthree:hover .customer__icon-three,
+.customer__item-groupfour:hover,
+.customer__item-groupfour:hover .customer__icon-four,
+.customer__item-groupfive:hover,
+.customer__item-groupfive:hover .customer__icon-five,
+.customer__item-groupsix:hover,
+.customer__item-groupsix:hover .customer__icon-six {
+  fill: var(--blue-text);
+}
+
+.customer__item-groupone:hover,
+.customer__item-grouptwo:hover,
+.customer__item-groupthree:hover,
+.customer__item-groupfour:hover,
+.customer__item-groupfive:hover,
+.customer__item-groupsix:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  cursor: pointer;
+}
