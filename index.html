@@ -28,7 +28,7 @@
                 </ul>
             </nav>
             <ul class="header-contacts">
-                <li class="header-contacts__item"><a class="header-contacts__link" href="mailto:info@devstudio.com">
+                <li class="header-contacts__item"><a class="header-contacts__link header-contacts__link-tab" href="mailto:info@devstudio.com">
                     <svg class="envelope">
                     <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>info@devstudio.com</a></li>
@@ -37,6 +37,49 @@
                     <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+            
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="open-btn-icon" width="40px" hight="40px"><use href="./images/icons.svg#icon-open"></use></svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="mobile-container">
+                <div class="mobile-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+                <svg class="menu-close-icon"><use href="./images/icons.svg#icon-close"></use></svg>
+            </button>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item"><a class="mobile-menu__links mobile-menu__links--active"
+            href="./index.html">Студия</a></li>
+                <li class="mobile-menu__item mobile-menu__item--margin"><a class="mobile-menu__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="mobile-menu__item mobile-menu__item--margin"><a class="mobile-menu__link" href="./Контакты">Контакты</a></li>
+            </ul>
+    </div>
+    <div class="mobile-menu-bottom">
+    <ul class="mobile-contacts__list">
+    <li class="mobile-contacts__item">
+        <a class="mobile-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+    </li>
+    <li class="mobile-contacts__item mobile-contacts__item-margin">
+        <a class="mobile-contacts__link-two" 
+        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    </ul>
+    <ul class="mobile-social__list">
+        <li class="mobile-social__item">
+            <a href="">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+            <a href="">linkedin</a>
+        </li>
+    </ul>
+    </div>
+    </div>
         </div>
     </header>
     <main>
@@ -70,26 +113,26 @@
                 </ul>
             </div>
         </section>
-        <!----------- EMPLOYMENT ---------->
+        <!-- --------- EMPLOYMENT ---------->
         <section class="employment">
             <div class="employment__container container">
                 <h3>Чем мы занимаемся</h3>
                 <ul class="employment__list">
                     <li class="employment__item">
                         <div>
-                            <img src="./images/klava.jpg" alt="пишем код" width="370">
+                            <img class="employment__image-one" src="./images/klava.jpg" alt="пишем код" width="370">
                             <p>десктопные приложения</p>
                         </div>
                     </li>
                     <li class="employment__item">
                         <div>
-                            <img src="./images/smart.jpg" alt="выбираем дизайн" width="370">
+                            <img class="employment__image-two" src="./images/smart.jpg" alt="выбираем дизайн" width="370">
                             <p>мобильные приложения</p>
                         </div>
                     </li>
                     <li class="employment__item">
                         <div>
-                            <img src="./images/plansch.jpg" alt="выбор цвета" width="370">
+                            <img class="employment__image-three" src="./images/plansch.jpg" alt="выбор цвета" width="370">
                             <p>дизайнерские решения</p>
                         </div>
                     </li>
@@ -101,8 +144,8 @@
             <div class="team-members__container container">
                 <h4>Наша команда</h4>
                 <ul class="team-members__list">
-                    <li class="team-members__item">
-                        <img src="./images/igor.jpg" alt="на фото Игорь Демьяненко" width="270">
+                    <li class="team-members__item team-members__item-one">
+                        <img class="team-member-one" src="./images/igor.jpg" alt="на фото Игорь Демьяненко" width="270">
                         <h5>Игорь Демьяненко</h5>
                         <p lang="en">Product Designer</p>
                         <ul class="social__list">
@@ -128,8 +171,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-members__item">
-                        <img src="./images/olga.jpg" alt="на фото Ольга Репина" width="270">
+                    <li class="team-members__item team-members__item-two">
+                        <img class="team-member-two" src="./images/olga.jpg" alt="на фото Ольга Репина" width="270">
                         <h5>Ольга Репина</h5>
                         <p lang="en">Frontend Developer</p>
                         <ul class="social__list">
@@ -155,8 +198,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-members__item">
-                        <img src="./images/nikolay.jpg" alt="на фото Николай Тарасов" width="270">
+                    <li class="team-members__item team-members__item-three">
+                        <img class="team-member-three" src="./images/nikolay.jpg" alt="на фото Николай Тарасов" width="270">
                         <h5>Николай Тарасов</h5>
                         <p lang="en">Marketing</p>
                         <ul class="social__list">
@@ -182,8 +225,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-members__item">
-                        <img src="./images/mike.jpg" alt="на фото Михаил Ермаков" width="270">
+                    <li class="team-members__item team-members__item-four">
+                        <img class="team-member-four" src="./images/mike.jpg" alt="на фото Михаил Ермаков" width="270">
                         <h5>Михаил Ермаков</h5>
                         <p lang="en">UI Designer</p>
                         <ul class="social__list">
@@ -298,6 +341,7 @@
     <!------------- FOOTER ------------->
     <footer class="footer">
         <div class="footer__container container">
+            <div class="footer-tab-container">
             <div class="footer__navigation">
                 <a href="./index.html" class="footer__logo" lang="en"><span class="footer__logo-text">Web</span>Studio</a>
                     <address class="footer__address">
@@ -334,6 +378,7 @@
                         </svg></a>
                     </li>
                 </ul>
+            </div>
             </div>
             <div class="footer__subscribe">
                 <p>Подпишитесь на рассылку</p>
@@ -400,5 +445,6 @@
         
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
