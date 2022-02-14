@@ -1,12 +1,10 @@
-.excellence {
-  padding-bottom: 0;
-}
 .excellence__list h2 {
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: bold;
   line-height: 1.1;
   text-transform: uppercase;
+  text-align: center;
 }
 .excellence__list p {
   margin-top: 0px;
@@ -14,12 +12,11 @@
   line-height: 1.7;
   color: var(--grey-text);
 }
-.excellence__list {
-  display: flex;
-  justify-content: space-between;
-}
-.excellence__item + .excellence__item {
-  margin-left: 30px;
+.excellence__item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .excellence__item::before {
   display: block;
@@ -32,13 +29,65 @@
 }
 .excellence__item-sputnik::before {
   background-image: url(../images/sputnik.svg);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 .excellence__item-watch::before {
   background-image: url(../images/watch.svg);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 .excellence__item-laptop::before {
   background-image: url(../images/laptop.svg);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
 }
 .excellence__item-gagarin::before {
   background-image: url(../images/gagarin.svg);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .excellence__list h2 {
+    text-align: start;
+  }
+  .excellence__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .excellence__item {
+    flex-basis: calc(100% / 2 - 15px);
+  }
+  .excellence__item-watch,
+  .excellence__item-gagarin {
+    margin-left: 30px;
+  }
+  .excellence__item-gagarin,
+  .excellence__item-laptop {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .excellence {
+    padding-bottom: 0;
+  }
+  .excellence__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .excellence__item + .excellence__item {
+    margin-left: 30px;
+  }
+  .excellence__list h2 {
+    text-align: start;
+  }
+  .excellence__item {
+    margin-bottom: 0px;
+  }
 }
