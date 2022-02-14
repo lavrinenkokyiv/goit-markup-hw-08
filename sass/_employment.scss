@@ -1,39 +1,70 @@
-.employment h3 {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.1;
-  color: var(--general-text);
+.employment {
+  display: none;
 }
-.employment__list + .employment__list {
-  margin-left: 30px;
-}
-.employment__list {
-  display: flex;
-  justify-content: center;
-}
-.employment__item {
-  mix-blend-mode: normal;
-}
-.employment__item + .employment__item {
-  margin-left: 30px;
-}
-.employment__item div {
-  position: relative;
-}
-.employment__item p {
-  position: absolute;
-  font-weight: bold;
-  line-height: 1.1;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  color: var(--second-text);
-  bottom: 0;
-  width: 100%;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+
+@media screen and (min-width: 1200px) {
+  .employment {
+    display: block;
+  }
+
+  .employment h3 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--general-text);
+  }
+  .employment__list + .employment__list {
+    margin-left: 30px;
+  }
+  .employment__list {
+    display: flex;
+    justify-content: center;
+  }
+  .employment__item {
+    mix-blend-mode: normal;
+  }
+  .employment__item + .employment__item {
+    margin-left: 30px;
+  }
+  .employment__item div {
+    position: relative;
+  }
+  .employment__item p {
+    position: absolute;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: var(--second-text);
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .employment__image-one {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/klava-2x.jpg);
+    }
+  }
+  .employment__image-two {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/smart-2x.jpg);
+    }
+  }
+  .employment__image-three {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/plansch-2x.jpg);
+    }
+  }
 }
