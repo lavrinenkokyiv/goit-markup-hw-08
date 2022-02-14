@@ -1,21 +1,31 @@
 .customer h6 {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: bold;
   font-size: 36px;
   line-height: calc(42 / 36);
   color: var(--general-text);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 28px;
+    line-height: calc(33 / 28);
+  }
 }
 .customer__item {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: calc(100% / 2 - 15px);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 226px;
+    height: 92px;
+    flex-basis: calc(100% / 3 - 15px);
+  }
 }
 .customer__icon-one {
   width: 41px;
@@ -67,10 +77,8 @@
 }
 .customer__list {
   display: flex;
-  justify-content: space-between;
-}
-.customer__item + .customer__item {
-  margin-left: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .customer__item-groupone:hover,
 .customer__item-groupone:hover .customer__icon-one,
@@ -96,4 +104,47 @@
   border: 1px solid #2196f3;
   border-radius: 4px;
   cursor: pointer;
+}
+.customer__item-groupone,
+.customer__item-groupthree {
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.customer__item-groupfive {
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customer__item-groupone,
+  .customer__item-groupfour {
+    margin-right: auto;
+  }
+  .customer__item-grouptwo {
+    margin-right: auto;
+  }
+  .customer__item-groupthree {
+    margin: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customer h6 {
+    margin-bottom: 50px;
+  }
+  .customer__item {
+    width: 170px;
+    height: 92px;
+  }
+  .customer__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 0px;
+  }
+  .customer__item + .customer__item {
+    margin-left: 30px;
+  }
+  .customer__item-groupone,
+  .customer__item-groupthree {
+    margin-bottom: 0px;
+  }
 }
