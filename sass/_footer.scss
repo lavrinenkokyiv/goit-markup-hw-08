@@ -111,7 +111,7 @@
 }
 .footer__yourmail input {
   margin-bottom: 20px;
-  width: 450px;
+  width: 100px;
   color: var(--second-text);
   height: 50px;
   padding: 15px 16px 15px;
@@ -120,9 +120,6 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--background-dark);
-  @media screen and (max-width: 479px) {
-    width: auto;
-    }
 }
 .footer__button {
   display: inline-flex;
